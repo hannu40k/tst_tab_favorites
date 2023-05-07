@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "TST Tab Favorites",
+  "version": "0.1",
+  "author": "hannu40k",
+  "description": "Adds hotkeys to set tabs as favorites and quickly navigating between them. Requires Treestyletab extension to function.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["main.js"]
+  },
+  "commands": {
+    "toggle-favorite": {
+      "suggested_key": {
+        "linux": "Ctrl+Right",
+        "mac": "Command+Right"
+      },
+      "description": "Toggle tab as favorite (add or remove from favorites)"
+    },
+    "next-favorite-up": {
+      "suggested_key": {
+        "linux": "Alt+Up",
+        "mac": "Command+Up"
+      },
+      "description": "Navigate to next favorite tab up"
+    },
+    "next-favorite-down": {
+      "suggested_key": {
+        "linux": "Alt+Down",
+        "mac": "Command+Down"
+      },
+      "description": "Navigate to next favorite tab down"
+    }
+  }
+}
